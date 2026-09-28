@@ -1,56 +1,64 @@
-# Orphanage Management System
+# 🏠 Orphanage Management System
 
-A web-based **Orphanage Management System** developed using **PHP and MySQL**. The system is designed to digitally manage users, adoption requests, user profiles, request history, and administrative operations.
+> A web-based system for managing orphanage users, adoption requests, profiles, and administrative operations.
 
-## 📌 Project Overview
+---
 
-The Orphanage Management System provides a centralized platform for managing orphanage-related activities.
+## 📌 About the Project
 
-Users can register for an account, log in using their email and password, manage their profile, submit adoption requests, and track their request history.
+The **Orphanage Management System** is a web-based application developed using **PHP and MySQL**.
 
-Administrators can manage registered users, adoption requests, user information, and other system operations through an admin panel.
+The system provides a centralized platform for managing orphanage-related activities. Users can register, log in using their email and password, manage their profiles, submit adoption requests, and track their request history.
+
+Administrators can manage registered users, adoption requests, user information, and other system operations through an administrative panel.
+
+---
 
 ## ✨ Features
 
 ### 👤 User Features
 
-- User Registration
-- Email and Password Login
-- Forgot Password
-- User Profile Management
-- Change Password
-- View Orphanage Information
-- Submit Adoption Requests
-- View Adoption Request Details
-- View Request History
-- Logout
+- 📝 User Registration
+- 🔐 Email & Password Login
+- 🔑 Forgot Password
+- 👤 User Profile Management
+- 🔒 Change Password
+- 🏠 View Orphanage Information
+- 📋 Submit Adoption Requests
+- 🔎 View Adoption Request Details
+- 📜 View Request History
+- 🚪 Logout
 
-### 🔐 Admin Features
+### 🛡️ Admin Features
 
-- Admin Login
-- Admin Forgot Password
-- Admin Profile Management
-- Manage Users
-- Edit User Information
-- Manage Adoption Requests
-- View Adoption Request Details
-- Administrative Dashboard
-- Logout
+- 🔐 Admin Login
+- 🔑 Admin Forgot Password
+- 👤 Admin Profile Management
+- 👥 Manage Users
+- ✏️ Edit User Information
+- 📋 Manage Adoption Requests
+- 🔎 View Adoption Request Details
+- 📊 Administrative Dashboard
+- 🚪 Logout
+
+---
 
 ## 🛠️ Technologies Used
 
 | Technology | Purpose |
-|------------|---------|
-| HTML5 | Page Structure |
-| CSS3 | Styling |
-| JavaScript | Client-Side Functionality |
-| PHP | Backend Development |
-| MySQL | Database |
-| Bootstrap | UI Framework |
-| jQuery | JavaScript Library |
-| XAMPP | Local Development Server |
-| phpMyAdmin | Database Management |
-| Git & GitHub | Version Control |
+|---|---|
+| **HTML5** | Page Structure |
+| **CSS3** | Styling |
+| **JavaScript** | Client-Side Functionality |
+| **PHP** | Backend Development |
+| **MySQL** | Database |
+| **Bootstrap** | UI Framework |
+| **jQuery** | JavaScript Library |
+| **XAMPP** | Local Development Server |
+| **phpMyAdmin** | Database Management |
+| **Git & GitHub** | Version Control |
+
+---
 
 ## 📂 Project Structure
 
@@ -63,6 +71,7 @@ Orphanage-Management-System/
 │   ├── js/
 │   ├── images/
 │   ├── includes/
+│   │
 │   ├── index.php
 │   ├── signup.php
 │   ├── signin.php
@@ -77,17 +86,21 @@ Orphanage-Management-System/
 └── README.md
 ```
 
-## ⚙️ Installation and Setup
+---
 
-### 1. Install XAMPP
+## ⚙️ Installation & Setup
 
-Install XAMPP with the following components:
+### 1️⃣ Install XAMPP
+
+Install **XAMPP** with the following components:
 
 - Apache
 - MySQL
 - phpMyAdmin
 
-### 2. Clone the Repository
+---
+
+### 2️⃣ Clone the Repository
 
 Open your terminal and run:
 
@@ -95,9 +108,11 @@ Open your terminal and run:
 git clone https://github.com/sandhyarawat998-eng/Orphanage-Management-System.git
 ```
 
-### 3. Move the Project to XAMPP
+---
 
-Copy the project folder into the XAMPP `htdocs` directory:
+### 3️⃣ Move the Project to XAMPP
+
+Copy the project folder into:
 
 ```text
 C:\xampp\htdocs\
@@ -109,16 +124,22 @@ The project should be located at:
 C:\xampp\htdocs\Orphanage-Management-System\
 ```
 
-### 4. Start XAMPP
+---
 
-Open the XAMPP Control Panel and start:
+### 4️⃣ Start XAMPP
+
+Open the **XAMPP Control Panel** and start:
 
 - Apache
 - MySQL
 
-### 5. Create the Database
+Both services should be running before opening the project.
 
-Open phpMyAdmin:
+---
+
+### 5️⃣ Create the Database
+
+Open phpMyAdmin in your browser:
 
 ```text
 http://localhost/phpmyadmin
@@ -130,25 +151,26 @@ Create a new database named:
 omsdb
 ```
 
-### 6. Import the Database
+---
+
+### 6️⃣ Import the Database
 
 Select the `omsdb` database in phpMyAdmin.
 
-Go to:
+Then:
 
-**Import → Choose File**
+1. Click **Import**
+2. Click **Choose File**
+3. Select `omsdb.sql`
+4. Click **Import** / **Go**
 
-Select:
+The required database tables will then be created.
 
-```text
-omsdb.sql
-```
+---
 
-Then click **Import** or **Go**.
+### 7️⃣ Configure Database Connection
 
-### 7. Configure the Database
-
-Make sure the database configuration in the project matches your local XAMPP setup.
+Open the database configuration file in the project and make sure the credentials match your local XAMPP configuration.
 
 Example:
 
@@ -159,7 +181,9 @@ define('DB_PASS', '');
 define('DB_NAME', 'omsdb');
 ```
 
-### 8. Run the Project
+---
+
+### 8️⃣ Run the Application
 
 Open your browser and visit:
 
@@ -167,42 +191,48 @@ Open your browser and visit:
 http://localhost/Orphanage-Management-System/oms/
 ```
 
+The application should now be available locally.
+
+---
+
 ## 🔑 Login System
 
-### User Login
+### 👤 User Login
 
-Normal users log in using:
+Registered users can log in using:
 
 ```text
 Email
 Password
 ```
 
-### Admin Login
+### 🛡️ Admin Login
 
-Administrators log in using:
+Administrators can log in using:
 
 ```text
 Admin Email
 Password
 ```
 
+---
+
 ## 🗄️ Database
 
-The project uses a MySQL database named:
+The application uses a **MySQL** database named:
 
 ```text
 omsdb
 ```
 
-The database contains tables required for managing:
+The database contains tables for managing:
 
-- Users
-- Administrators
-- Adoption Requests
-- User information
-- Adoption-related records
-- Other system data
+- 👤 Users
+- 🛡️ Administrators
+- 🏠 Adoption Requests
+- 📋 User Information
+- 📄 Adoption-Related Records
+- 📊 Other System Data
 
 The database structure is provided in:
 
@@ -210,43 +240,56 @@ The database structure is provided in:
 omsdb.sql
 ```
 
+---
+
 ## 🔒 Security
 
-The system includes:
+The application includes:
 
 - Session-based authentication
 - Login validation
-- User and Admin access separation
+- User/Admin access separation
 - Form validation
 - Prepared SQL statements
 - Password verification
 
-> For production deployment, additional security measures such as HTTPS, secure password hashing, CSRF protection, secure session configuration, and token-based password reset should be implemented.
+> **Note:** For production deployment, additional security measures such as HTTPS, secure password hashing, CSRF protection, secure session configuration, and token-based password reset should be implemented.
+
+---
 
 ## 🚀 Future Improvements
 
-Future versions of the project can include:
+Planned or possible improvements include:
 
-- Online adoption application tracking
-- Email notifications
-- OTP-based password reset
-- Improved admin dashboard
-- Advanced search and filtering
-- Reports and analytics
-- Role-based access control
-- Enhanced security
-- Improved responsive design
-- Online deployment
-- Email-based communication
+- 📧 Email Notifications
+- 🔢 OTP-Based Password Reset
+- 📊 Improved Admin Dashboard
+- 🔎 Advanced Search and Filtering
+- 📈 Reports and Analytics
+- 👥 Role-Based Access Control
+- 🔐 Enhanced Security
+- 📱 Improved Responsive Design
+- 🌐 Online Deployment
+- 💬 Email-Based Communication
+- 📋 Improved Adoption Application Tracking
+
+---
 
 ## 👨‍💻 Author
 
-**Sandhya Rawat**
+### Sandhya Rawat
 
-GitHub:
-
+GitHub:  
 https://github.com/sandhyarawat998-eng
+
+---
 
 ## 📄 License
 
-This project is developed for educational and project purposes.
+This project is developed for **educational and project purposes**.
+
+---
+
+## ⭐ Support
+
+If you find this project useful, consider giving the repository a ⭐ on GitHub.
